@@ -1,0 +1,21 @@
+:root{
+    --Bg-color:#E6D8BD;
+    --Black:#000000;
+    --White:#FFFFFF;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Bg-color);
+    font-family: "Kameron", serif;
+}
+
+h1{
+    font-family: "Kaisei Tokumin", serif;
+}
