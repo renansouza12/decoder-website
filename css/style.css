@@ -1,45 +1,79 @@
-nav{
-    position: fixed;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-   
-    background: rgba(255, 255, 255, 0.342);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    clip-path: polygon(3% 2%, 97% 2%, 100% 20%, 89% 80%, 67% 100%, 31% 100%, 9% 78%, 0 20%);
-
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 10px 2rem;
-    box-shadow: 0 4px 4px rgba(0,0,0,.25);
-
-        a{
-            font-weight: bold;
-            color: rgb(63, 63, 63);
-            transition: .5s;
-
-            &:hover{
-                color: var(--Black);
+.app{
+    nav{
+        position: fixed;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+       
+        background: rgba(255, 255, 255, 0.342);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        clip-path: polygon(3% 2%, 97% 2%, 100% 20%, 89% 80%, 67% 100%, 31% 100%, 9% 78%, 0 20%);
+    
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px 2rem;
+        box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    
+            a{
+                font-weight: bold;
+                color: rgb(63, 63, 63);
+                transition: .5s;
+    
+                &:hover{
+                    color: var(--Black);
+                }
             }
-        }
-        
-        span{
-            font-size: 30px;
-            &:nth-child(1){
-                animation: disappearAndAppear 5s infinite;
+            
+            span{
+                font-size: 30px;
             }
-            &:nth-child(2){
-                animation: disappearAndAppear 5s 0.5s infinite;
-            }
+    }
+    
+    .hero{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        position: relative;
+    
+        &::after{
+            position: absolute;
+            content: "";
+            background-color: #E6D8BD;
+            height: 100%;
+            width: 50%;
+            right: 0;
+            top: 0;
+            z-index: -1;
         }
     
+        h1{
+            font-size: 16vw;
+            font-weight: 100;
+        }
+    
+        h4{
+            position: absolute;
+            right: 20%;
+            bottom: 20%;
+            width: 17%;
+            text-align: justify;
+            color: var(--Brown-d);
+    
+            span{
+                color: var(--White);
+            }
+        }
+    }
+   
 }
 
+ 
 @keyframes disappearAndAppear {
     0% {
       opacity: 1;
@@ -49,5 +83,16 @@ nav{
     }
     100% {
       opacity: 1;
+    }
+  }
+
+
+  @media (max-width:768px) {
+    .app{
+        .hero{
+            h4{
+                width: 40%;
+            }
+        }
     }
   }
