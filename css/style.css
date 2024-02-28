@@ -52,10 +52,12 @@
             z-index: -1;
         }
 
-        h1{
-            font-family: "Titillium Web", sans-serif;
-            font-size: 16vw;
-            font-weight: 100;
+        .logo{
+            width: 50vw;
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
     
         h4{

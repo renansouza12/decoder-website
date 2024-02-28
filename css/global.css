@@ -20,6 +20,11 @@ body{
 h1{
     color: var(--White);
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    span{
+        font-size: 3vw;
+    }
 }
 a{
     text-decoration: none;
