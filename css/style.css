@@ -79,7 +79,7 @@
             width: 40%;
             text-align: center;
             color:var(--Text-color);
-            font-size: 20px;
+            font-size: 1.5vw;
             font-weight: 500;
             span{
                 font-family: 'Titillium';
@@ -112,6 +112,22 @@
             h4{
                 width: 40%;
             }
+        }
+        .introduction{
+            p{
+                font-size: 14px;
+                width: 70%;
+
+            }
+        }
+    }
+  }
+  @media (max-width:425px) {
+    .app{
+        .hero{
+          .logo{
+            width: 70vw;
+          }
         }
     }
   }
