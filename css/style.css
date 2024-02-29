@@ -77,9 +77,9 @@
 
             span{
                 font-family: 'Titillium';
-                font-weight: 100;
-                text-transform: capitalize;
-                color: var(--Black);
+                font-weight: 500;
+                text-transform: uppercase;
+                color: var(--White);
             }
         }
     }
@@ -111,9 +111,9 @@
             width: 90%;
             display: grid;
             grid-template-columns: repeat(5,0.5fr);
-
+            
             .requirement{
-                border-left: 1px solid var(--Black);
+                border-left: 1px solid var(--White);
                 padding: 0 1rem;
                 .requirement_content{
                     display: flex;
@@ -158,7 +158,7 @@
         height: 100vh;
         width: 90%;
         margin: 0 auto;
-        border-top: 1px solid var(--Black);
+        border-top: 1px solid var(--White);
 
        .more{
         margin-top: 5rem;
@@ -167,7 +167,7 @@
             font-weight: 100;
             font-size: 3vw;
             margin-bottom: 2rem;
-
+            
             span{
                 font-family: "Nunito", sans-serif;
             }

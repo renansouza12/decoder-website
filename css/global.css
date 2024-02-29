@@ -1,10 +1,9 @@
 :root{
-    --Bg-color:#FFE6C7;
+    --Bg-color:#232946;
     --Black:#000000;
     --White:#FFFFFF;
-    --Brown-d:#65371F;
     --Gray:rgb(86, 86, 86);
-    --Text-color:#282119;
+    --Text-color:#b8c1ec;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -19,6 +18,7 @@ body{
 }
 h2{
     font-family: 'Titillium';
+    color: var(--Text-color);
 }
 h3{
     text-transform: uppercase;
@@ -27,7 +27,13 @@ h3{
     font-weight: 100;
     letter-spacing: 2px;
 }
+i{
+    color: var(--White);
+}
 
+p{
+    color: var(--Text-color);
+}
 
 a{
     text-decoration: none;
@@ -36,4 +42,7 @@ a{
 
 ul{
     list-style: none;
+}
+li{
+    color: var(--White);
 }
