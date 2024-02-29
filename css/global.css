@@ -4,6 +4,7 @@
     --White:#FFFFFF;
     --Gray:rgb(86, 86, 86);
     --Text-color:#b8c1ec;
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -29,6 +30,7 @@ h3{
 }
 i{
     color: var(--White);
+    font-size: 30px;
 }
 
 p{
