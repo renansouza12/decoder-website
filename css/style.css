@@ -67,14 +67,7 @@
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        h3{
-            text-transform: uppercase;
-            font-size: 14px;
-            color:var(--Text-color);
-            font-weight: 100;
-            letter-spacing: 2px;
-        }
-
+      
         p{
             width: 40%;
             text-align: center;
@@ -86,6 +79,76 @@
                 font-weight: 100;
                 text-transform: capitalize;
                 color: var(--Black);
+            }
+        }
+    }
+    .about{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 3rem 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 80%;
+            background-color: var(--Text-color);
+            top: 0;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        .requirements{
+            height: 100%;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(5,0.5fr);
+
+            .requirement{
+                border-left: 1px solid var(--Black);
+                padding: 0 1rem;
+                .requirement_content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    p{
+                        height: 100%;
+                        font-size: 1.1vw;
+                    }
+                    
+                    i{
+                        font-size: 50px;
+                    }
+                }
+              
+                &:nth-child(1){
+                    .requirement_content{
+                        transform: translateY(100px);
+                    }   
+                }
+                &:nth-child(2){
+                    .requirement_content{
+                        transform: translateY(400px);
+                    }   
+                }
+                &:nth-child(4){
+                    .requirement_content{
+                        transform: translateY(330px);
+                    }   
+                }
+                &:nth-child(5){
+                    .requirement_content{
+                        transform: translateY(200px);
+                    }   
+                }
             }
         }
     }
@@ -118,6 +181,30 @@
                 font-size: 14px;
                 width: 70%;
 
+            }
+        }
+        .about{
+            .requirements{
+                height: 100%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5,1fr);
+                gap: 1rem;
+                .requirement{
+                    border-top: 1px solid var(--Black);
+                    border-left: 0px ;
+                    .requirement_content{
+                        p{
+                            height: 100%;
+                            font-size: 10px;
+                            text-align: center;
+                        }
+                    }
+                    &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5){
+                        .requirement_content{
+                            transform: translateY(0px);
+                        }   
+                    }
+                }
             }
         }
     }

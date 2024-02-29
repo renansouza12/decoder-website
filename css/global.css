@@ -18,15 +18,15 @@ body{
     font-family: "Nunito", sans-serif;
 }
 
-h1{
-    color: var(--White);
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-    span{
-        font-size: 3vw;
-    }
+h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:var(--Text-color);
+    font-weight: 100;
+    letter-spacing: 2px;
 }
+
+
 a{
     text-decoration: none;
     color: var(--Black);
