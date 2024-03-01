@@ -257,6 +257,7 @@
         }
 
         .project_images {
+            padding: 2rem 0;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -326,6 +327,18 @@
                         transform: translate(-120px, 300px);
                         width: 250px;
                         height: 250px;
+                    }
+                }
+
+                .second_image{
+                    .icon_copy{
+                        transform: translate(-350px, -30px);
+                        width: 250px;
+                        height: 250px;
+                    }
+                    .icon_output{
+                        width: 230px;
+                        height: 230px;
                     }
                 }
 
@@ -401,6 +414,13 @@
                             height:150px;
                         }
                     }
+                    .second_image{
+                        .icon_copy{
+                            transform: translate(-250px, 40px);
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
                 }
             }
         }
@@ -461,6 +481,7 @@
             .project_content {
                 .more_container {
                     .more_content {
+                         grid-template-columns: repeat(2, 70px);
                         .more {
                             p {
                                 font-size: 10px;
@@ -521,6 +542,13 @@
                         .icon_input{
                             transform: translate(-75px, 350px);
                           
+                        }
+                    }
+                    .second_image{
+                        .icon_copy{
+                            transform: translate(-150px, 40px);
+                            height: 100px;
+                            width: 100px;
                         }
                     }
                 }
