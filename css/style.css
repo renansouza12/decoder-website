@@ -182,17 +182,20 @@
         }
 
         .project_content {
-           
+
             height: 100%;
+
             .more_container {
                 border-top: 1px solid var(--Text-color);
                 padding: 1rem 0;
                 margin-top: 5rem;
+
                 h2 {
 
                     margin-bottom: 3rem;
                     display: flex;
                     justify-content: center;
+
                     span {
                         font-family: "Nunito", sans-serif;
                     }
@@ -252,43 +255,87 @@
 
             }
         }
-        .project_images{
+
+        .project_images {
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            .image{
+
+            .image {
                 height: 100vh;
                 width: 90vw;
                 display: grid;
                 place-content: center;
                 background-color: var(--Black);
+
                 position: relative;
 
 
-                img{
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     height: 500px;
-                    width: 400px;
+                    width: auto;
                     object-fit: cover;
-                  
                 }
 
-                .icons{
-                    img{
-                       position: absolute;
+                .icons {
+                    opacity: 0;
+                    transition: 1s;
+
+                    img {
                         height: 100px;
                         width: 100px;
                         object-fit: contain;
-    
-                        top: 5%;
-                        right: 41%;
                     }
                 }
+
+                .first_image {
+                    transform: translateY(-300px);
+
+                    .icon_min {
+                        transform: translate(10px, -20px);
+                    }
+
+                    .icon_max {
+                        transform: translate(140px, -20px);
+                    }
+
+                    .icon_close {
+                        transform: translate(180px, 60px);
+                    }
+
+                    .icon_crip {
+                        transform: translate(-380px, 130px);
+                        width: 250px;
+                        height: 250px;
+                    }
+
+                    .icon_decrip {
+                        transform: translate(120px, 140px);
+                        width: 250px;
+                        height: 250px;
+                    }
+
+                    .icon_input {
+                        transform: translate(-120px, 300px);
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+
+                &:hover .icons {
+                    opacity: 1;
+                }
+
             }
-           
-        }  
+
+        }
     }
 
 
@@ -310,19 +357,55 @@
     }
 }
 
-/* @media (max-width:800px) {
+@media (max-width:900px) {
     .app {
         .project {
-            .project_content {
-                .more_container {
-                    .more_content {
-                        background-color: red;
+            .project_images {
+                .image {
+                    width: 100vw;
+
+                    img {
+                        height: 400px;
+                        width: auto;
+                    }
+
+                    .first_image {
+                        .icon_min {
+                            transform: translate(-10px, 23px);
+                        }
+
+                        .icon_max {
+                            transform: translate(110px, 23px);
+                        }
+
+                        .icon_close {
+                            transform: translate(130px, 110px);
+                        }
+
+                        .icon_crip {
+                            transform: translate(-210px, 210px);
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        .icon_decrip {
+                            transform: translate(50px, 210px);
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        
+                        .icon_input{
+                            transform: translate(-60px, 350px);
+                            width: 150px;
+                            height:150px;
+                        }
                     }
                 }
             }
         }
     }
-} */
+}
 
 @media (max-width:768px) {
     .app {
@@ -375,17 +458,17 @@
         }
 
         .project {
-           .project_content{
-                .more_container{
-                    .more_content{
-                        .more{
-                            p{
+            .project_content {
+                .more_container {
+                    .more_content {
+                        .more {
+                            p {
                                 font-size: 10px;
                             }
                         }
                     }
                 }
-           }
+            }
         }
     }
 }
@@ -397,12 +480,53 @@
                 width: 70vw;
             }
         }
+        .project{
+            .project_images{
+                .image{
+                    img{
+                        height: 300px;
+                        width: auto;  
+                    }
+                    .icons{
+                        
+                        img{
+                            height: 60px;
+                            width: 60px;
+                        }
+                    }
+                    .first_image{
+                        .icon_min {
+                            transform: translate(10px, 110px);
+                        }
+                        .icon_max {
+                            transform: translate(80px, 110px);
+                        }
 
-        .project {
-            .more {
-                width: 100%;
-                text-align: center;
+                        .icon_close {
+                            transform: translate(90px, 170px) rotate(28deg);
+                        }
+
+                        
+                        .icon_crip,.icon_decrip {
+                           
+                            width: 100px;
+                            height: 100px;
+                        }
+                        .icon_crip{
+                            transform: translate(-150px, 240px);    
+                        }
+                        .icon_decrip{
+                            transform: translate(50px, 245px);
+                        }
+                        .icon_input{
+                            transform: translate(-75px, 350px);
+                          
+                        }
+                    }
+                }
             }
+    
         }
+      
     }
 }
