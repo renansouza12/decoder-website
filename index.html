@@ -1,129 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>DECODER v2</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="app">
-        <nav>
-            <a href="#">Index</a>
-            <a href="#">Index</a>
-            <a href="#">Index</a>
-        </nav>
+      <nav>
+        <a href="#">Index</a>
+        <a href="#">Index</a>
+        <a href="#">Index</a>
+      </nav>
 
-        <div class="hero">
-            <video autoplay muted loop>
-                <source src="./assets/video/bg-video.mp4" type="video/mp4">
-            </video>
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="logo">
-            </div>
+      <div class="hero">
+        <video autoplay muted loop>
+          <source src="./assets/video/bg-video.mp4" type="video/mp4" />
+        </video>
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
         </div>
-        <div class="introduction">
-            <h2>Introdução</h2>
+      </div>
+      <div class="introduction">
+        <h2>Introdução</h2>
 
-            <p>
-                Este site destaca minha conquista ao enfrentar o desafio proposto pela <span>Alura + Oracle</span> de
-                criar um
-                Decodificador. Trata-se de uma aplicação dedicada à criptografia de textos.</p>
-        </div>
-        <div class="about">
-            <h2>Requisitos</h2>
-            <div class="requirements">
-
-                <div class="requirement">
-                    <div class="requirement_content">
-                        <i class="ph ph-text-aa"></i>
-                        <p>Deve funcionar apenas com letras minúsculas</p>
-                    </div>
-
-                </div>
-                <div class="requirement">
-                    <div class="requirement_content">
-                        <i class="ph ph-prohibit"></i>
-                        <p>Não devem ser utilizados letras com acentos nem caracteres especiais</p>
-                    </div>
-
-                </div>
-                <div class="requirement">
-                    <div class="requirement_content">
-                        <i class="ph ph-chats"></i>
-                        <p>Deve ser possível converter uma palavra para a versão criptografada e também retornar uma
-                            palavra criptografada para a versão original.</p>
-                    </div>
-
-
-                </div>
-                <div class="requirement">
-                    <div class="requirement_content">
-                        <i class="ph ph-intersect"></i>
-                        <p>A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a
-                            pessoa usuária deve poder escolher entre as duas opções</p>
-                    </div>
-
-                </div>
-                <div class="requirement">
-                    <div class="requirement_content">
-                        <i class="ph ph-projector-screen-chart"></i>
-                        <p>O resultado deve ser exibido na tela.</p>
-                    </div>
-
-                </div>
+        <p>
+          Este site destaca minha conquista ao enfrentar o desafio proposto pela
+          <span>Alura + Oracle</span> de criar um Decodificador. Trata-se de uma
+          aplicação dedicada à criptografia de textos.
+        </p>
+      </div>
+      <div class="about">
+        <h2>Requisitos</h2>
+        <div class="requirements">
+          <div class="requirement">
+            <div class="requirement_content">
+              <i class="ph ph-text-aa"></i>
+              <p>Deve funcionar apenas com letras minúsculas</p>
             </div>
-
-        </div>
-        <div class="project">
-            <h2>Projeto</h2>
-            <div class="project_image_main">
+          </div>
+          <div class="requirement">
+            <div class="requirement_content">
+              <i class="ph ph-prohibit"></i>
+              <p>
+                Não devem ser utilizados letras com acentos nem caracteres
+                especiais
+              </p>
             </div>
-            <div class="project_content">
-                <div class="more_container">
-                    <h2>As <span>"chaves"</span>  de criptografia utilizada </h2>
-                    <div class="more_content">
-                        <div class="more"> <p>A letra "e" é convertida para "enter"</p> </div>
-                        <div class="more"> <p>A letra "i" é convertida para "imes"</p> </div>
-                        <div class="more"> <p>A letra "a" é convertida para "ai"</p> </div>
-                        <div class="more"> <p>A letra "o" é convertida para "ober"</p> </div>
-                        <div class="more"> <p>A letra "u" é convertida para "ufat"</p> </div>
-                    </div>
-                </div>
+          </div>
+          <div class="requirement">
+            <div class="requirement_content">
+              <i class="ph ph-chats"></i>
+              <p>
+                Deve ser possível converter uma palavra para a versão
+                criptografada e também retornar uma palavra criptografada para a
+                versão original.
+              </p>
             </div>
-           <div class="project_images">
-                <h2>Imagens</h2>
-                <div class="image">
-                    <img  src="./assets/images/decoder-image.png" alt="decoder image">
-
-                    <div class=" icons first_image">
-                        <img class="icon_min" src="./assets/images/icons/icon-min.png" alt="icon minimize">
-                        <img class="icon_max"  src="./assets/images/icons/icon-max.png" alt="icon maximizar">
-                        <img class="icon_close"  src="./assets/images/icons/icon-close.png" alt="icon closed">
-                        <img class="icon_crip"  src="./assets/images/icons/btn_crip.png" alt="icon encript">
-                        <img class="icon_decrip"  src="./assets/images/icons/btn_decri.png" alt="icon decript">
-                        <img class="icon_input"  src="./assets/images/icons/text_input.png" alt="icon input">
-                    </div>
-                </div>
-
-                <div class="image">
-                    <img  src="./assets/images/decrypted.PNG" alt="decoder image">
-
-                    <div class="icons second_image">
-                        <img class="icon_copy" src="./assets/images/icons/btn-copy.png" alt="icon copy">
-                        <img class="icon_output" src="./assets/images/icons/text_output.png" alt="icon output">
-                    </div>
-                </div>
-           </div>
+          </div>
+          <div class="requirement">
+            <div class="requirement_content">
+              <i class="ph ph-intersect"></i>
+              <p>
+                A página deve ter campos para inserção do texto a ser
+                criptografado ou descriptografado, e a pessoa usuária deve poder
+                escolher entre as duas opções
+              </p>
+            </div>
+          </div>
+          <div class="requirement">
+            <div class="requirement_content">
+              <i class="ph ph-projector-screen-chart"></i>
+              <p>O resultado deve ser exibido na tela.</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="project">
+        <h2>Projeto</h2>
+        <div class="project_image_main"></div>
+        <div class="project_content">
+          <div class="more_container">
+            <h2>As <span>"chaves"</span> de criptografia utilizada</h2>
+            <div class="more_content">
+              <div class="more">
+                <p>A letra "e" é convertida para "enter"</p>
+              </div>
+              <div class="more">
+                <p>A letra "i" é convertida para "imes"</p>
+              </div>
+              <div class="more"><p>A letra "a" é convertida para "ai"</p></div>
+              <div class="more">
+                <p>A letra "o" é convertida para "ober"</p>
+              </div>
+              <div class="more">
+                <p>A letra "u" é convertida para "ufat"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project_images">
+          <h2>Imagens</h2>
+          <div class="image">
+            <img src="./assets/images/decoder-image.png" alt="decoder image" />
+
+            <div class="icons first_image">
+              <img
+                class="icon_min"
+                src="./assets/images/icons/icon-min.png"
+                alt="icon minimize"
+              />
+              <img
+                class="icon_max"
+                src="./assets/images/icons/icon-max.png"
+                alt="icon maximizar"
+              />
+              <img
+                class="icon_close"
+                src="./assets/images/icons/icon-close.png"
+                alt="icon closed"
+              />
+              <img
+                class="icon_crip"
+                src="./assets/images/icons/btn_crip.png"
+                alt="icon encript"
+              />
+              <img
+                class="icon_decrip"
+                src="./assets/images/icons/btn_decri.png"
+                alt="icon decript"
+              />
+              <img
+                class="icon_input"
+                src="./assets/images/icons/text_input.png"
+                alt="icon input"
+              />
+            </div>
+          </div>
+
+          <div class="image">
+            <img src="./assets/images/decrypted.PNG" alt="decoder image" />
+
+            <div class="icons second_image">
+              <img
+                class="icon_copy"
+                src="./assets/images/icons/btn-copy.png"
+                alt="icon copy"
+              />
+              <img
+                class="icon_output"
+                src="./assets/images/icons/text_output.png"
+                alt="icon output"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h1> <img src="assets/animatedImages/premierGif.gif" alt="gif"> Agradeço</h1>
+        <span>pela sua visita <img src="assets/animatedImages/deuxiemeGif.gif" alt="gif"></span>
+      </footer>
     </div>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
 
     <script src="js/scroll.js"></script>
-</body>
-
+  </body>
 </html>

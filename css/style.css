@@ -351,7 +351,38 @@
         }
     }
 
+footer{
+    height: 100vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e528ee113299219.6024e23365572.jpg') center/cover;
+    background-attachment: fixed;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+        height: 10vh;
+        width: 12vw;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+    h1,span{
+        color: var(--Text-color);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-size: 7vw;
+        font-weight: bold;
+    }
+    span{
+        font-size: 6vw;
+        border-bottom: 1px solid var(--Text-color);
+    }
+}
 
 }
 
