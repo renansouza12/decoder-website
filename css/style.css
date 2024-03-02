@@ -27,6 +27,11 @@
             transition: .5s;
             font-size: 15px;
 
+            i{
+               font-size: 11px;
+               margin-right: 4px;
+            }
+
             &:hover {
                 opacity: 1;
             }
